@@ -6,11 +6,16 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
 .banner {
   position: relative;
   max-height: 500px;
-  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .banner-contents {
@@ -18,16 +23,22 @@ html {
   position: absolute;
   bottom: 1rem;
   max-width: 50em;
-  text-align: center;
+  display: inline-block;
+}
+
+.btn-big {
+  float: inherit;
 }
 
 .btn {
-  background-color: #333333;
+  background-color: #333;
   border-radius: 8px;
   padding: .4em .75em .3em;
   text-decoration: none;
-  display: inline-block;
   color: white;
+  left: 30em;
+  transform: translateY(50%);
+  float: right;
 }
 
 .btn:hover {
@@ -37,8 +48,17 @@ html {
 h2 {
   font-size: 3rem;
   font-family: "Roboto Condensed", sans-serif;
+  left: 15em;
 }
 
 .img-flex {
-  max-width: 100%
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  top: 0;
+}
+
+.circle {
+  float: left;
+  width: 10em;
 }
